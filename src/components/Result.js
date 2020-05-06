@@ -14,12 +14,35 @@ const Result = props => {
         content = (
             <React.Fragment>
                 <h2>Wyniki wyszukiwania dla miejscowości: <em>{city}</em></h2>
-                <h3>Dane dla dnia i godziny: {date}</h3>
-                <h3>Aktualna temperatura: {temp} <em>&#176;C</em></h3>
-                <h3>Wschód słońca dzisiaj o: {sunriseTime}</h3>
-                <h3>Zachód słońca dzisiaj o: {sunsetTime}</h3>
-                <h3>Aktualna siła wiatru: {wind} <em>m / s</em></h3>
-                <h3>Aktualne ciśnienie: {pressure} <em>hPa</em></h3>
+                <table className="weather">
+                    <thead></thead>
+                    <tbody>
+                        <tr>
+                            <td>Dane dla dnia i godziny:</td>
+                            <td>{date}</td>
+                        </tr>
+                        <tr>
+                            <td>Aktualna temperatura:</td>
+                            <td>{temp} <em>&#176;C</em></td>
+                        </tr>
+                        <tr>
+                            <td>Wschód słońca dzisiaj o:</td>
+                            <td>{sunriseTime}</td>
+                        </tr>
+                        <tr>
+                            <td>Zachód słońca dzisiaj o:</td>
+                            <td>{sunsetTime}</td>
+                        </tr>
+                        <tr>
+                            <td>Aktualna siła wiatru:</td>
+                            <td>{wind} <em>m / s</em></td>
+                        </tr>
+                        <tr>
+                            <td>Aktualne ciśnienie:</td>
+                            <td>{pressure} <em>hPa</em></td>
+                        </tr>
+                    </tbody>
+                </table>
             </React.Fragment>
         )
     }
